@@ -1,13 +1,13 @@
 package org.proteus1121.structure.bridge.audio;
 
 
-import org.proteus1121.structure.bridge.media.MediaPlayer;
+import org.proteus1121.structure.bridge.media.MediaDriver;
 
 public abstract class AudioPlayer {
-    protected MediaPlayer mediaPlayerImpl;
+    protected MediaDriver mediaDriverImpl;
 
-    public AudioPlayer(MediaPlayer mediaPlayer) {
-        this.mediaPlayerImpl = mediaPlayer;
+    public AudioPlayer(MediaDriver mediaDriver) {
+        this.mediaDriverImpl = mediaDriver;
     }
 
     public abstract void play(String fileName);
